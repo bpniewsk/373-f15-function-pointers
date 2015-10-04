@@ -44,7 +44,7 @@ uint64_t get_sorted_copy_and_effort(
 int main() {
 	const int a[] = {1,115,-10,52,-6,2,4,264,23,-14,1,15,13,42,72,43,-143,53};
 	const unsigned count = sizeof(a)/sizeof(int);
-
+		
 	sorting_fn* fn = sorting_fns;
 	while (*fn != NULL) {
 		uint64_t effort;
@@ -60,6 +60,7 @@ int main() {
 	}
 
 	unsigned char *data = (unsigned char*) bubble_sort;
+	printf("bubsort %ld", bubble_sort);
 	unsigned i;
 	fprintf(stderr, "# Q2: Copy this output --> ");
 #ifdef __clang__
